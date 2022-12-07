@@ -1,0 +1,15 @@
+print("Input lengths of the triangle sides: ")
+x = int(input("x: "))
+y = int(input("y: "))
+z = int(input("z: "))
+
+if x == y and x == z and z != y:
+    print('Isosceles')
+elif y == z and y == x and x != z:
+    print('Isosceles')
+elif x == y and x != z and z != y:
+    print('Scalene')
+elif y == z and y != x and x != z:
+    print('Scalene')
+elif x == y and x == z and z == y:
+    print('Equilateral')
